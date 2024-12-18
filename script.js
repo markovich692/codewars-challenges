@@ -26,5 +26,3 @@ function sevenAte9(str) {
 
   return newNumber;
 }
-
-remove(79712312);
