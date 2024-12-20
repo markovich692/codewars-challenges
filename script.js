@@ -1,6 +1,4 @@
 'use strict';
 
-// Beaches are filled with sand, water, fish, and sun.
-// Given a string, calculate how many times the words
-// "Sand", "Water", "Fish", and "Sun" appear without
-// overlapping (regardless of the case).
+//Find Mean
+//Find the mean (average) of a list of numbers in an array.
