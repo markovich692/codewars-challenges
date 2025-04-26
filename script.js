@@ -16,3 +16,13 @@ const isSquare = function (number) {
 // We need to sum big numbers and we require your help.
 // Write a function that returns the sum of two numbers.
 //  The input numbers are strings and the function must return a string.
+
+const add = function (a, b) {
+  const result = BigInt(a) + BigInt(b);
+
+  console.log(typeof String(result));
+
+  return String(result);
+};
+
+add('63829983432984289347293874', '90938498237058927340892374089');
