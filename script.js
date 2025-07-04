@@ -21,6 +21,4 @@ const sumTwoSmallestNumbers = function (numbers) {
   return total;
 };
 
-const test = sumTwoSmallestNumbers([10, 343445353, 3453445, 3453545353453]);
 
-console.log(test);
