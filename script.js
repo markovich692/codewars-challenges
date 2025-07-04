@@ -1,24 +1,6 @@
-/* 
-Create a function that returns the sum of the two lowest positive numbers given an array of minimum 4 positive integers. No floats or non-positive integers will be passed.
-
-For example, when an array is passed like [19, 5, 42, 2, 77], the output should be 7.
-
-[10, 343445353, 3453445, 3453545353453] should return 3453455.
- */
-
-const sumTwoSmallestNumbers = function (numbers) {
-  if (numbers.length <= 1) return;
-
-  let total = 0;
-
-  numbers
-    .sort((a, b) => a - b)
-    .splice(0, 2)
-    .forEach(smallNumber => {
-      total += smallNumber;
-    });
-
-  return total;
-};
-
-
+/*
+Alex just got a new hula hoop, he loves it but feels discouraged because his little brother is better than him.
+Write a program where Alex can input (n) how many times the hoop goes round and it will return him an encouraging message:
+If Alex gets 10 or more hoops, return the string "Great, now move on to tricks".
+If he doesn't get 10 hoops, return the string "Keep at it until you get it".
+*/
