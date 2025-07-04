@@ -5,3 +5,20 @@ For example, when an array is passed like [19, 5, 42, 2, 77], the output should 
 
 [10, 343445353, 3453445, 3453545353453] should return 3453455.
  */
+
+const sumTwoSmallestNumbers = function (numbers) {
+  let total = 0;
+
+  numbers
+    .sort((a, b) => a - b)
+    .splice(0, 2)
+    .forEach(smallNumber => {
+      total += smallNumber;
+    });
+
+  return total;
+};
+
+const test = sumTwoSmallestNumbers([10, 343445353, 3453445, 3453545353453]);
+
+console.log(test);
