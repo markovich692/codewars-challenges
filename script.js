@@ -8,7 +8,7 @@ filter_list([1,'a','b',0,15]) == [1,0,15]
 filter_list([1,2,'aasf','1','123',123]) == [1,2,123]
  */
 
-const filterList = function (list) {
+const filterNumber = function (list) {
   let arrFilter = [];
 
   list.filter((el, i, arr) => {
@@ -17,7 +17,3 @@ const filterList = function (list) {
 
   return arrFilter;
 };
-
-const test = filterList([1, 'a', 'b', 0, 15]);
-
-console.log(test);
