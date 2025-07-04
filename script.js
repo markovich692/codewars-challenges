@@ -7,6 +7,8 @@ For example, when an array is passed like [19, 5, 42, 2, 77], the output should 
  */
 
 const sumTwoSmallestNumbers = function (numbers) {
+  if (numbers.length <= 1) return;
+
   let total = 0;
 
   numbers
