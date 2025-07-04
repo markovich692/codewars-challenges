@@ -1,19 +1,7 @@
 /* 
-In this kata you will create a function that takes a list of non-negative
- integers and strings and returns a new list with the strings filtered out.
+Create a function that returns the sum of the two lowest positive numbers given an array of minimum 4 positive integers. No floats or non-positive integers will be passed.
 
- Example
-filter_list([1,2,'a','b']) == [1,2]
-filter_list([1,'a','b',0,15]) == [1,0,15]
-filter_list([1,2,'aasf','1','123',123]) == [1,2,123]
+For example, when an array is passed like [19, 5, 42, 2, 77], the output should be 7.
+
+[10, 343445353, 3453445, 3453545353453] should return 3453455.
  */
-
-const filterNumber = function (list) {
-  let arrFilter = [];
-
-  list.filter((el, i, arr) => {
-    typeof el === 'number' ? arrFilter.push(el) : arrFilter;
-  });
-
-  return arrFilter;
-};
