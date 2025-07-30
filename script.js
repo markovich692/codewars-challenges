@@ -1,18 +1,8 @@
 /*
-Alex just got a new hula hoop, he loves it but feels discouraged because his little brother is better than him.
-Write a program where Alex can input (n) how many times the hoop goes round and it will return him an encouraging message:
-If Alex gets 10 or more hoops, return the string "Great, now move on to tricks".
-If he doesn't get 10 hoops, return the string "Keep at it until you get it".
+---CALCULATING WITH FUNCTIONS 
+There must be a function for each number from 0 ("zero") to 9 ("nine")
+There must be a function for each of the following mathematical operations: plus, minus, times, dividedBy
+Each calculation consist of exactly one operation and two numbers
+The most outer function represents the left operand, the most inner function represents the right operand
+Division should be integer division. For example, this should return 2, not 2.666666...:
 */
-
-function hoopCount(n) {
-  if (typeof n !== 'number') return;
-
-  return n >= 10
-    ? 'Great, now move on to tricks'
-    : 'Keep at it until you get it';
-}
-
-const test = hoopCount(11);
-
-console.log(test);
